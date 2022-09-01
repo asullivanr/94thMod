@@ -1,5 +1,4 @@
 ./@LocalModTest/addons/*
 
 *.pbo
-
-./Armors/
+*.spp
