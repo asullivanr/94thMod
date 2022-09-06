@@ -27,28 +27,28 @@ class CfgFactionClasses
     {
         displayname = "[94th] CIS Forces"; // Main faction, No real camo
         priority = 1;
-        side = 2;
+        side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa";
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
     class NinetyForth_UnitFact_Mandos {
         displayname = "[94th] Mandalorian Mercenaries"; // TODO: Come up with an actual name for this clan
         priority = 1;
-        side = 2;
+        side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
     class NinetyForth_UnitFact_Insurrectionist_Organized {
         displayname = "[94th] Insurrectionists Organized"; // TODO: Come up with an actual name for the Insurrectionists
         priority = 1;
-        side = 2;
+        side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
     class NinetyForth_UnitFact_Insurrectionist_Unorganized {
         displayname = "[94th] Rebels Unorganized"; // TODO: Come up with an actual name for the Insurrectionists
         priority = 1;
-        side = 2;
+        side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
