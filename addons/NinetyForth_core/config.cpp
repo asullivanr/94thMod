@@ -66,14 +66,14 @@ class CfgFactionClasses {
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
     class NinetyForth_UnitFact_Rebel_Organized01 {
-        displayname = "[94th] Insurrectionists Organized"; // TODO: Come up with an actual name for the Insurrectionists
+        displayname = "[94th] Rebels Organized"; // TODO: Come up with an actual name for the Rebels
         priority = 1;
         side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
         flag = "\SWLB_core\data\insignia\cis.paa";
     };
     class NinetyForth_UnitFact_Rebel_Unorganized01 {
-        displayname = "[94th] Rebels Unorganized"; // TODO: Come up with an actual name for the Insurrectionists
+        displayname = "[94th] Rebels Unorganized"; // TODO: Come up with an actual name for the Rebels
         priority = 1;
         side = 0;
         icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
@@ -134,7 +134,6 @@ class CfgEditorSubcategories {
     class NinetyForth_EditorSubcategory_Objects_Turrets {
         displayName = "Turrets";
     };
-
 };
 class ACEX_Fortify_Presets {
     class NinetyForth_Fortify01 {
