@@ -3,81 +3,19 @@ class CfgPatches {
         author = "Akira";
         name = "94th: Core";
         requiredAddons[] = {
-            "ls_core",
-            "ls_armor_bluefor",
-            "lsd_armor_bluefor",
             "OPTRE_Core"
         };
         weapons[] = {};
         units[] = {};
     };
 };
-class CfgImprecision {
-    class Primary {
-        verticalRadius = 0;
-        horizontalRadius = 0;
-    };
-    class Secondary {
-        verticalRadius = 0;
-        horizontalRadius = 0;
-    };
-};
-class Extended_PreStart_EventHandlers {
-    class ace_advanced_fatigue {
-        init = "";
-    };
-};
-class Extended_PreInit_EventHandlers {
-    RS_Init = "RS_Init_Var = [] execVM ""\NinetyForth_core\init.sqf""";
-    class ace_advanced_fatigue {
-        init = "";
-    };
-};
-class Extended_PostInit_EventHandlers {
-    class ace_advanced_fatigue {
-        init = "";
-    };
-};
-class Extended_DisplayLoad_EventHandlers {
-    class RscDisplayMission {
-        ace_advanced_fatigue = "";
-    };
-};
 class CfgFactionClasses {
-    class NinetyForth_UnitFact_Main {
+    class NinetyForth_UnitFact_Main { // Primary faction for the 94th
         displayname = "[94th] Legion";
         priority = 1;
         side = 1;
         icon = "\NinetyForth_core\data\logo.paa";
         flag = "\NinetyForth_core\data\logo.paa";
-    };
-    class NinetyForth_UnitFact_CIS01 {
-        displayname = "[94th] CIS Remnants Forces"; // Remnants faction, No real camo
-        priority = 1;
-        side = 0;
-        icon = "\SWLB_core\data\insignia\cis.paa";
-        flag = "\SWLB_core\data\insignia\cis.paa";
-    };
-    class NinetyForth_UnitFact_Mandos01 {
-        displayname = "[94th] Mandalorian Mercenaries"; // TODO: Come up with an actual name for this clan
-        priority = 1;
-        side = 0;
-        icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
-        flag = "\SWLB_core\data\insignia\cis.paa";
-    };
-    class NinetyForth_UnitFact_Rebel_Organized01 {
-        displayname = "[94th] Rebels Organized"; // TODO: Come up with an actual name for the Rebels
-        priority = 1;
-        side = 0;
-        icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
-        flag = "\SWLB_core\data\insignia\cis.paa";
-    };
-    class NinetyForth_UnitFact_Rebel_Unorganized01 {
-        displayname = "[94th] Rebels Unorganized"; // TODO: Come up with an actual name for the Rebels
-        priority = 1;
-        side = 0;
-        icon = "\SWLB_core\data\insignia\cis.paa"; // TODO: At some point give them their own insignia
-        flag = "\SWLB_core\data\insignia\cis.paa";
     };
 };
 class CfgEditorCategories {
@@ -102,7 +40,7 @@ class CfgEditorSubcategories {
     class NinetyForth_EditorSubcategory_Objects_Banners {
         displayName = "Banners";
     };
-    // All supply props. Pods boxes or others
+    // All supply props. Pods, boxes or others
     class NinetyForth_EditorSubcategory_Objects_Supplies {
         displayName = "Supplies";
     };
@@ -122,13 +60,9 @@ class CfgEditorSubcategories {
     class NinetyForth_EditorSubcategory_Objects_Vehicles {
         displayName = "Vehicles";
     };
-    // All Pelicans categorized
-    class NinetyForth_EditorSubcategory_Objects_Pelicans {
-        displayName = "Pelicans";
-    };
-    // All Hornets categorized
-    class NinetyForth_EditorSubcategory_Objects_Hornets {
-        displayName = "Hornets";
+    // All LAATs categorized
+    class NinetyForth_EditorSubcategory_Objects_Laat {
+        displayName = "LAAT";
     };
     // Generic for turrets
     class NinetyForth_EditorSubcategory_Objects_Turrets {
@@ -138,7 +72,7 @@ class CfgEditorSubcategories {
 class ACEX_Fortify_Presets {
     class NinetyForth_Fortify01 {
         displayName = "94th Legion - Fortify";
-        objects[] = {
+        objects[] = { // TODO: Find replacements
             {"Land_Plank_01_4m_F", 5},
             {"Land_OPTRE_M72S_barrier", 13},
             {"Land_OPTRE_M72_barrier", 13},
@@ -150,4 +84,15 @@ class ACEX_Fortify_Presets {
             {"Land_HBarrierTower_F", 20}
         };
     };
+};
+class CfgMainMenuSpotlight {
+	class JoinServer
+	{
+		text = "94th Main Op server";
+		//picture = "NinetyForth_core\data\spotlight.paa";
+        picture = "NinetyForth_core\data\logo.paa";
+		action = "connectToServer ['127.0.0.1', 2302, '']"; // connectToServer [ip, port, password]
+		actionText = "94th Main Op server";
+		condition = "true";
+	};
 };
